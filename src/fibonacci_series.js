@@ -20,14 +20,14 @@ function fibonacci_series(n) {
 			}
 		else
 		{
-		for(var i=3;i<n+1;i++)
+		for(var i=3;i<=n;i++)
 		{
 			
 			arrss[i]=2*arrss[i-1]-arrss[i-3];
 			arrss.push(arrss[i]);
 		}
 		return arrss;
-			}
+		}
 		
 }
 
