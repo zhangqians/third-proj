@@ -23,7 +23,7 @@ function fibonacci_series(n) {
 		for(var i=3;i<=n;i++)
 		{
 			
-			arrss[i]=2*arrss[i-1]-arrss[i-3];
+			arrss[i]=arrss[i-1]+arrss[i-2];
 			arrss.push(arrss[i]);
 		}
 		return arrss;
