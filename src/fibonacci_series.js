@@ -3,32 +3,23 @@
 function fibonacci_series(n) {
 	var arr=[0];
 	var arrs=[0,1];
-	var arrss=[0,1,1];
-	
-	
-		if(n==0)
+	if(n==0)
 		{
 			return arr;
 			}
-		else if(n==1)
+	else if(n==1)
 		{
 			return arrs;
 			}
-		else if(n==2)
+	else
 		{
-		return arrss;
-			}
-		else
-		{
-		for(var i=3;i<=n;i++)
+		for(var i=2;i<=n;i++)
 		{
 			
-			arrss[i]=arrss[i-1]+arrss[i-2];
-			arrss.push(arrss[i]);
+			arrs[i]=arrs[i-1]+arrs[i-2];
+			arrs.push(arrs[i]);
 		}
-		return arrss;
+		return arrs;
 		}
-		
 }
-
 module.exports = fibonacci_series;
