@@ -17,7 +17,7 @@ function fibonacci_series(n) {
 		{
 			
 			arrs[i]=arrs[i-1]+arrs[i-2];
-			arrs.push(arrs[i]);
+			arr.push(arrs[i]);
 		}
 		return arrs;
 		}
